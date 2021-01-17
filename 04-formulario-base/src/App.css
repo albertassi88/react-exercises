@@ -1,0 +1,47 @@
+.App {
+  padding: 100px 100px;
+  display: flex;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App .login-form {
+  width: 50%;
+  border-right: 1px white solid;
+}
+
+.App form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.App form input, button {
+  margin: 10px 0;
+  width: 60%;
+  height: 40px;
+}
+
+.App form input {
+  background-color: #454545;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+}
+
+.App form button {
+  background-color: violet;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+}
+
+.App form .form-error {
+  margin-bottom: 15px;
+  color: red;
+}
+
