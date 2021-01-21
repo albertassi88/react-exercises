@@ -21,9 +21,12 @@ class App extends React.Component {
   render() {
     const { date } = this.state;
     return (
+      <main>     
       <div className="App">
-       <h1 >{date.toLocaleTimeString()}</h1>
+       <p>Relógio</p>
+       <h1>{date.toLocaleTimeString()}</h1>
       </div>
+      </main>
     );
   }
 }
