@@ -1,20 +1,18 @@
 import React from 'react';
-import Um from './components/Um';
+import Cabecalho from './components/Cabecalho';
+
 import './App.css';
+
 
 class App extends React.Component {
   constructor() {
     super();
-  }
+  }  
 
-  hundleOi = () => {
-    console.log('oi');
-  }
-
-  render() {   
+  render() {       
    return (
-      <div className="App">        
-        <Um nome={this.hundleOi}/>
+      <div className="App"> 
+        <Cabecalho />        
       </div>
     );
   }
