@@ -1,14 +1,20 @@
 import React from 'react';
+import Um from './components/Um';
 import './App.css';
 
 class App extends React.Component {
-  render() {
-    const { arrayProps } = this.props;
-   return (
-      <div className="App">
-           
-        <h2>{arrayProps}</h2>
+  constructor() {
+    super();
+  }
 
+  hundleOi = () => {
+    console.log('oi');
+  }
+
+  render() {   
+   return (
+      <div className="App">        
+        <Um nome={this.hundleOi}/>
       </div>
     );
   }
