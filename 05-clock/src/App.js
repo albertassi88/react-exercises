@@ -1,13 +1,16 @@
 import React from 'react';
-import Clock from './Clock';
+import Clock from './components/Clock';
 import './App.css';
 
 class App extends React.Component {
-  render() {
+  render() {  
     return(
-      <Clock />
+      <div>
+        <Clock />     
+      </div>
     );    
   }
 }
 
 export default App;
+
