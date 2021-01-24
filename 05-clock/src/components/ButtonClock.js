@@ -7,23 +7,27 @@ class ButtonClock extends React.Component {
 
         this.state = {
             turnOf: true, 
-        }
-       
+            value: 'Fechar Relógio',
+        }    
+        this.hundleButton = this.hundleButton.bind(this);   
     }
 
-    hundleButton = () => {
-      //  const { turnOf } = this.state;
-        console.log('oi');
-        // this.setState({
-        //     turnOf: !turnOf,
-        // })
+    hundleButton() {
+       const { turnOf, value } = this.state;      
+      
+        this.setState({
+            turnOf: !turnOf, // turnOf === true ? false : true
+            value: value === 'Fechar Relógio' ? 'Abrir Relógio' : 'Fechar Relógio',
+        })
     }
 
-    render() {    
+    render() {  
+        const { turnOf, value } = this.state;         
          
         return(
             <div>
-                {<Clock propsButton={ this.hundleButton }/>}
+                <Clock propsButton={this.hundleButton} stateTurnOf={ turnOf } 
+                stateValue={ value }/>
             </div>
         );
     }

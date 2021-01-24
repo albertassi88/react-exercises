@@ -1,21 +1,19 @@
-.App {    
+.App {   
+    text-align: center; 
     background-color: rgb(148, 167, 167);
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 170px;
     margin-left: auto;
     margin-right: auto;     
 }
 
-.App h1 {
-    background-color: rgb(104, 92, 92);
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.App p {
+.App h2 {
     padding-top: 20px;
     text-align: center;
+    color: aliceblue;
+}
+
+.App button {  
+    background-color: aqua;
+    color: darkblue;
 }
