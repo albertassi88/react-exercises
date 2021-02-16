@@ -1,18 +1,20 @@
 import React from 'react';
-import Cabecalho from './components/Cabecalho';
-
-import './App.css';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ListaFilmes from './pages/ListaFilmes';
+import DetalhesFilmes from './pages/DetalhesFilmes';
+import NotFound from './pages/NotFound';
 
 class App extends React.Component {
-  constructor() {
-    super();
-  }  
-
   render() {       
    return (
-      <div className="App"> 
-        <Cabecalho />        
+      <div > 
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={ListaFilmes} />
+            <Route path='/detalhes/:id' component={DetalhesFilmes} />                      
+            <Route component={NotFound} /> 
+          </Switch>        
+        </BrowserRouter>            
       </div>
     );
   }

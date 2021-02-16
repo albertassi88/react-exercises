@@ -1,0 +1,22 @@
+.container-detalhes {
+    align-self: center;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    padding: 20px;   
+}
+
+.detalhes {
+    border: black solid 2px;
+    border-radius: 7px;
+    width: 300px;     
+    text-align: center; 
+}
+
+.detalhes img {
+    width: 180px;
+    height: 250px;
+    padding: 5px;         
+}
+
+
