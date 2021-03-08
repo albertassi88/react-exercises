@@ -1,0 +1,10 @@
+.container-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 100px;
+}
+
+.shopping-cart-icon {
+    width: 40px;
+}
