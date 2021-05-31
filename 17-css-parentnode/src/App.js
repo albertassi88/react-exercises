@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/App.css';
 
+//
 function App() {
 
   const handleChecked = (event) => {
@@ -27,4 +28,3 @@ function App() {
 }
 
 export default App;
-
