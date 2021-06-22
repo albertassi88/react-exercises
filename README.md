@@ -1,0 +1,1 @@
+## Exemplos de Arrow Functions com object.
