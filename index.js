@@ -185,3 +185,12 @@ console.log(string.startsWith('Sat')); //true
 
 const array = [1, 2, 3, 4];
 console.log(array[array.length - 1]); //última posição do array.
+
+
+//Retorna números iguais
+function numerosIguais(numbers) {
+    return numbers.filter((element, index) => {
+        return numbers.indexOf(element) !== index;
+    });
+}
+console.log(numerosIguais([1,3,5,6,6,5])); // [6,5]
