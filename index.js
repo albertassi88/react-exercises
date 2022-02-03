@@ -147,3 +147,41 @@ const cidades = {
     },
 };
 console.log(cidades['iacu']) //{ nome: 'Iacu', cep: '46.860-000' }
+
+
+// Alterar o nome de uma chave de um objeto, dentro de um array
+let objeto = [ 
+    {
+        name: "Debora",
+        idade: 15
+    },
+    {
+        name: "Alice",
+        cpf: 88
+    },
+    {
+        name: "Mônica",
+        idade: 90
+    },
+]
+
+//Forma 1 de fazer
+for (const key of objeto) {
+    if (key) {
+        key.idade = key.idade || key.cpf        
+    }
+}
+console.log(objeto)  //[{ name: 'Debora', idade: 15 }, { name: 'Alice', cpf: 88, idade: 88 }, { name: 'Mônica', idade: 90 }]
+
+//Forma 2 de fazer abreviado a forma 1
+for (const key of objeto) key.idade = key.idade || key.cpf;
+console.log(objeto)   //[{ name: 'Debora', idade: 15 }, { name: 'Alice', cpf: 88, idade: 88 }, { name: 'Mônica', idade: 90 }]
+
+//Forma 3 de fazer deletando a chave
+for (const key of objeto) {
+    if (key) {
+        key.idade = key.idade || key.cpf   
+        delete key.cpf     
+    }
+}
+console.log(objeto)  //[{ name: 'Debora', idade: 15 }, { name: 'Alice', idade: 88 }, { name: 'Mônica', idade: 90 }]
