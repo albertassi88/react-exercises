@@ -194,3 +194,20 @@ function numerosIguais(numbers) {
     });
 }
 console.log(numerosIguais([1,3,5,6,6,5])); // [6,5]
+
+
+//Retorna quantidade de nomes iguais
+const array = ["Otavio", "Ana", "Ruben", "Luiz", "Ana", "Hatus", "Ana", "Ana", "Lucas"];
+function nomesIguais() {
+    return array.reduce((acc, value, index) => {
+        if (array.indexOf(value) !== index) {   
+            acc[value] = acc[value] + 1
+        } else {
+            acc[value] = 1
+        }
+        return acc;
+    }, {})
+}
+console.log(nomesIguais()); //{ Otavio: 1, Ana: 4, Ruben: 1, Luiz: 1, Hatus: 1, Lucas: 1 }
+
+
