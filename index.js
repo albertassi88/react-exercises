@@ -211,3 +211,12 @@ function nomesIguais() {
 console.log(nomesIguais()); //{ Otavio: 1, Ana: 4, Ruben: 1, Luiz: 1, Hatus: 1, Lucas: 1 }
 
 
+//Percorrer dois arrays ao mesmo tempo.
+const array1 = [1, 2, 3, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 20, 21, 22];
+const array2 = [0, 1, 2, 3, 4, 5, 6, 7,  8,  9,  10, 11, 12, 13, 14, 15, 16];
+
+array1.forEach((num1, index) => {
+  const num2 = array2[index];
+  console.log(num1, num2);  
+});
+//1 0 2 1 3 2 5 3 7 4 8 5 .......
